@@ -8,8 +8,8 @@ print(driver.title)
 assert "Python" in driver.title
 elem = driver.find_element_by_name("q")
 elem.send_keys("pycon")
-sleep(5)
+sleep(1)
 elem.send_keys(Keys.RETURN)
 assert "No results found." not in driver.page_source
-sleep(5)
-# driver.close()
+sleep(2)
+driver.close()
